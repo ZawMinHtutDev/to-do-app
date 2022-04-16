@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    background-color: #000;
+    font-family: sans-serif;
+}
+
+body p, body li {
+    color: #ddd;
+    font-size: 15px;
+}
+
+section {
+    padding: 20px;
+    max-width: 768px;
+    margin: auto;
+}
+
+#logo {
+    text-align: center;
+}
+
+#logo img {
+    filter: invert(100%);
+    max-width: 320px;
+}
+
+#todo {
+    background-color: #333;
+    padding: 25px;
+    border-radius: 5px;
+}
+
+#todo form {
+    padding: 15px;
+    display: flex;
+}
+
+#todo form input {
+    display: block;
+    margin-bottom: 5px;
+    flex: 1;
+}
+
+#todo form input[type="text"] {
+    padding: 10px 15px;
+}
+
+#todo form input[type="submit"] {
+    padding: 10px 15px;
+    max-width: max-content;
+    cursor: pointer;
+    background-color: #222;
+    color: #fff;
+    border: 0;
+    margin-left: 10px;
+}
+
+#todo ul {
+    padding: 20px 0;
+    margin: 0;
+}
+
+#todo ul li {
+    list-style: none;
+    padding: 20px 25px;
+    background-color: #222;
+    cursor: pointer;
+    transition: all 0.15s ease-in;
+}
+
+#todo ul li:first-child {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+#todo ul li:last-child {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+#todo ul li:not(:last-child) {
+    border-bottom: 1px solid #444;
+}
+
+#todo ul li:hover {
+    text-decoration: line-through;
+    color: #999;
+    background-color: #111;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0 0 0;
+    margin-top: 50px;
+}
+
+footer p {
+    font-size: 13px;
+}

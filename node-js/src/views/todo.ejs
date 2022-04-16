@@ -1,0 +1,17 @@
+<%- include('./partials/header.ejs'); %>
+
+<section>
+    <div id="todo">
+        <form action="/todo">
+            <input type="text" name="item" id="item" placeholder="Add an item" />
+            <input type="submit" value="Add an item" />
+        </form>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+    </div>
+</section>
+
+<%- include('./partials/footer.ejs'); %>
