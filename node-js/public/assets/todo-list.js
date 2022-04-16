@@ -20,5 +20,24 @@ $(document).ready(function () {
 
             return false;
         });
+
+        let toDoItem = $("#todo ul li");
+
+        toDoItem.on("click", function(e) {
+            let item = e.target.innerText.replace(/ /g, "-");
+
+            $.ajax({
+                type: "DELETE",
+                url: "/todo/" + item,
+                data: item,
+                success: function(data) {
+                    // the data here is the response from controller delete method.
+                    // console.log(data);
+
+                    // refreshing to do a get routing
+                    location.reload();
+                }
+            })
+        });
     }
 });

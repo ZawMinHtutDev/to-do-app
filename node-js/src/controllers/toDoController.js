@@ -15,4 +15,9 @@ module.exports = function (app) {
         data.push(req.body);
         res.json(req.body);
     });
+
+    app.delete("/todo/:item", (req, res) => {
+        data.splice(data.indexOf(req.params.item.replace(/-/g," ")),1);
+        res.json(data);
+    });
 };
